@@ -33,5 +33,8 @@
     <ClCompile Include="cal_mnmo.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="cal_expr.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
