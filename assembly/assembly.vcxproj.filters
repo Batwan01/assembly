@@ -27,5 +27,8 @@
     <ClCompile Include="optab.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="asm_mnmo.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

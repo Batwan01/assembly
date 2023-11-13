@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="asm_mnmo.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="optab.c" />
     <ClCompile Include="rdline.c" />
