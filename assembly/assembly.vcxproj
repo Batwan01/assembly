@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="optab.c" />
     <ClCompile Include="rdline.c" />
     <ClCompile Include="symtab.c" />
   </ItemGroup>
