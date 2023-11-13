@@ -134,6 +134,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="optab.c" />
     <ClCompile Include="rdline.c" />
+    <ClCompile Include="str2int.c" />
     <ClCompile Include="symtab.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
