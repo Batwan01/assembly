@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-nclude "optab.h"
+#include "optab.h"
 #include "dctab.h"
 #include "symtab.h"
 #include "asm.h"
