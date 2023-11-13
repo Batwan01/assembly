@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="rdline.c" />
+    <ClCompile Include="symtab.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
