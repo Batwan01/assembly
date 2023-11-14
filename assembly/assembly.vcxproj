@@ -143,6 +143,7 @@
     <ClCompile Include="symtab.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dctab.h" />
     <ClInclude Include="optab.h" />
     <ClInclude Include="symtab.h" />
   </ItemGroup>
