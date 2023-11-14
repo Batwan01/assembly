@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="asc2int.c" />
     <ClCompile Include="asm_mnmo.c" />
+    <ClCompile Include="asm_space.c" />
     <ClCompile Include="cal_expr.c" />
     <ClCompile Include="cal_mnmo.c" />
     <ClCompile Include="cal_term.c" />

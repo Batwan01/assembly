@@ -48,5 +48,8 @@
     <ClCompile Include="dctab.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="asm_space.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
