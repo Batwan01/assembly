@@ -142,6 +142,9 @@
     <ClCompile Include="str2int.c" />
     <ClCompile Include="symtab.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="symtab.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
