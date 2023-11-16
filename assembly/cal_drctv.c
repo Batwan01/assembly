@@ -1,4 +1,7 @@
-#define MAX_DNUM 8 // ex) cal_dc_oprnd("4h,'AB',VAR-1-VAR2",4,OBJC)
+#include <stdio.h>
+#include <string.h>
+#include "oprand.h"
+
 int cal_dc_oprnd(char* oprnd, int unit, unsigned char obj[])
 {											// ex_dc_oprnd("100, VAR1, BUF-4", 2, OBJC)
 	char buf[128], * exp;
@@ -14,6 +17,7 @@ int cal_dc_oprnd(char* oprnd, int unit, unsigned char obj[])
 			fprintf(stderr, "%s ->> OPerand '%s' is not valid...\n", LBUF, oprnd), exit(11);
 
 		v = cal_one_expr(exp);
+			(exp);
 		switch (unit)
 		{
 			case 4: *op = v >> 24; op++, len++;

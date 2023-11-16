@@ -1,3 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include "dctab.h"
+#include "oprand.h"
+#include "symtab.h"
+
 int asm_space(Dctab* dp) //return length of object code
 {
 	int len;

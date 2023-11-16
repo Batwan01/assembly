@@ -9,5 +9,6 @@ typedef struct symtab {
 
 extern int SYMCNT;
 extern Symtab SYMTAB[];
-extern int ins_SYMTAB(int valie, char* sym);
-extern int see_SYMTAB(char *sym);
+
+extern int ins_SYMTAB(int value, char* sym);
+extern int see_SYMTAB(char* sym);

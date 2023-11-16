@@ -1,3 +1,7 @@
+#include <string.h>
+#include "symtab.h"
+#include "oprand.h"
+
 int asc2int(char* ap)			// ex) str2int("AB")
 {
 	int l = strlen(ap), v;

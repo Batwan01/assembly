@@ -9,9 +9,9 @@
 #include "util.h"
 #include "oprand.h"
 
-int LOC = 0, LDaddr, GOaddr;
+int LOC=0, LDaddr, GOaddr;
 char LBUF[128], * LNO, * LABEL, * OPcode, * OPerand;
-unsigned char OBJC[MAX_DNUM * 4 + 1]; //MAX_DNUN?
+unsigned char OBJC[MAX_DNUM * 4 + 1];
 char* null_LNO = "  ";
 char* null_LBL = "      ";
 char* null_OPR = "      ";
@@ -25,12 +25,11 @@ void OnePassAssemble(char* sfile) {
 	if (!(fp = fopen(sfile, "r")))
 		fprintf(stderr, "File '%s' not found....\n", sfile), exit(1);
 	put_list_head();
-
 	read_line(fp);
 
 	if (!LABEL) LABEL = "ASMBLY";
 	if (!OPcode || strcmp(OPcode, "START"))
-		fprintf(stderr, "\n%s --> Start address in invalid...\n", LBUF), exit(2);
+		fprintf(stderr, "\n%s --> Opcode is not 'START'...\n", LBUF), exit(2);
 	if (OPerand && (LOC = str2int(OPerand)) < 0)
 		fprintf(stderr, "\n%s --> Start address is invalid...\n", LBUF), exit(3);
 
@@ -50,6 +49,10 @@ void OnePassAssemble(char* sfile) {
 
 			if (!ins_SYMTAB(LOC, LABEL))
 				fprintf(stderr, "\n%s --> Symbol '%s' is duplicated...\n", LBUF, LABEL), exit(5);
+			
+			
+			
+			
 		}
 	if (op = see_OPTAB(OPcode))
 		len = asm_mnemonic(op);
@@ -74,3 +77,7 @@ void OnePassAssemble(char* sfile) {
 	exit(0);
 }
 
+int main() {
+	char* name = "s_101.txt";
+	OnePassAssemble(name);
+}

@@ -1,3 +1,10 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#include "symtab.h"
+#include "util.h"
+#include "oprand.h"
+
 int str2int(char* sp)				// ex) str2int("4")
 {									// ex) str2int("10h")			
 	int l = strlen(sp);

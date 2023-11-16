@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+#include "oprand.h"
 #define OP_XBIT 0x800000
 
 int cal_nm_dmpr(char* oprnd) { //operand of "DMPR" mnemonic

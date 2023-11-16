@@ -1,12 +1,7 @@
-#define MAX_SYM 100
-#define MAX_SLEN (8+1)
-#define INV_VAL (-0x7fffffff)
-#define RND_OPR 0x7fffff
+#include <string.h>
+#include "symtab.h"
 
-typedef struct symtab {
-	char symbol[MAX_SLEN];
-	int value;
-} Symtab;
+#define RND_OPR 0x7fffff
 
 int SYMCNT = 1;
 Symtab SYMTAB[MAX_SYM] = { "RND", RND_OPR, }; //symbol for random number

@@ -3,13 +3,13 @@
 
 typedef struct dctab {
 	char directive[MAX_DLEN];
-	char type; //CNST or RESV
-#define DC_CNST 0
-#define DC_RESV 1
-	char unit; // DW(4) or WD(2) or BT(1)
-#define DC_DW	4
-#define DC_WD	2
-#define DC_BT	1
+	char type;
+#define DC_CNST		0
+#define DC_RESV		1
+	char unit;
+#define DC_DW		4
+#define DC_WD		2
+#define DC_BT		1
 } Dctab;
 
 extern Dctab DCTAB[];

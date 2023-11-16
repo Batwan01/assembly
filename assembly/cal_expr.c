@@ -1,3 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include "oprand.h"
+
+int issign(char ch) {
+	if (ch == '+') return 1;
+	else if (ch == '-') return -1;
+	else return 0;
+}
+
 int cal_one_expr(char* expr) {						// ex) cal_one_expr("BUF")
 													// ex) cal_one_expr("VAR3+4")
 	int expv, v1, v2, sign;							// ex) cal_one_expr("10h+10")
