@@ -1,4 +1,4 @@
-#define MAX_DNUM 8 // ex) cal_dc_oprnd("4h,'AB',VAR-1-VAR2",4,OBJC)
+#define MAX_DNUM 8 
 
 extern int LOC, LDaddr, GOaddr;			//main.c
 extern char LBUF[], * LNO, * LABEL, * OPcode, * OPerand;

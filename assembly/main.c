@@ -77,7 +77,21 @@ void OnePassAssemble(char* sfile) {
 	exit(0);
 }
 
+/*int main(int argc, char* argv[]) {
+	if (argc != 2) {
+		fprintf(stderr, "Usage: %s <assembly_file>\n", argv[0]);
+		return 1;
+	}
+
+	char* source_file = argv[1];
+	OnePassAssemble(source_file);
+
+	return 0;
+}*/
+
 int main() {
-	char* name = "s_101.txt";
-	OnePassAssemble(name);
+	char* n = "s_101.txt";
+	OnePassAssemble(n);
+
+	return 0;
 }

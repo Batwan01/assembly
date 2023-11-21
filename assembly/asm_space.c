@@ -17,7 +17,7 @@ int asm_space(Dctab* dp) //return length of object code
 		OBJC[0] = 0;
 		return(len);
 	}
-	if (dp->unit == 1 && OPerand[0] == '\'') // DB "EOT"
+	if (dp->unit == 1 && OPerand[0] == '\"') // DB "EOT"
 		len = cal_dc_oprnd_string(OPerand, OBJC);
 	else                                     // DW 10+2, '2A', 30
 		len = cal_dc_oprnd(OPerand, dp->unit, OBJC);

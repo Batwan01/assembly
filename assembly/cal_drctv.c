@@ -34,9 +34,9 @@ int cal_dc_oprnd_string(char* oprnd, unsigned char obj[])
 {											// ex) cal_dc_oprnd_string("EOT", OBJC)
 	int i;
 
-	for (i = 1; oprnd[i] != '\'' && i <= MAX_DNUM; i++)
+	for (i = 1; oprnd[i] != '\"' && i <= MAX_DNUM; i++)
 		obj[i] = oprnd[i];
-	if (oprnd[i] != '\'' || !oprnd[i] || oprnd[i + 1])
+	if (oprnd[i] != '\"' || !oprnd[i] || oprnd[i + 1])
 		fprintf(stderr, "%s --> Operand '%s' is not valid...\n", LBUF, oprnd), exit(11);
 
 	obj[i] = '\0'; obj[0] = i;
