@@ -1,0 +1,15 @@
+S_114 START 100h
+        LDX ZERO
+        LDA SEED
+        STA RND
+LOOP    LDA RND
+        MOD HUND
+        DMPR A
+        IXBC TEN
+        JNZ LOOP
+        HALT
+ZERO    DD 0
+TEN     DD 10
+SEED    DD 7
+HUND    DD 100
+        END

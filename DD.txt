@@ -1,0 +1,9 @@
+S_111 START 1300h
+
+VARS    DD 1,2,0
+MAIN    LDA VARS
+        ADD VARS+4
+        STA VARS+8
+        DMP VARS+8
+        HALT
+        END MAIN

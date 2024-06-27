@@ -1,0 +1,23 @@
+W_119 START
+
+LOOP    LDA SUM
+        ADD i
+        STA SUM
+        LDA i
+        ADD ONE
+        STA i
+        CMP HUN
+        JNZ LOOP
+        DMP SUM
+        HALT
+
+
+
+
+
+
+
+i       DD 1
+ONE     DD 1
+SUM     DD 0
+HUN     DD 101
